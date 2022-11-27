@@ -1,0 +1,2026 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--
+    This_software_was_developed_and_/_or_modified_by_Raytheon_Company,
+    pursuant_to_Contract_DG133W-05-CQ-1067_with_the_US_Government.
+
+    U.S._EXPORT_CONTROLLED_TECHNICAL_DATA
+    This_software_product_contains_export-restricted_data_whose
+    export/transfer/disclosure_is_restricted_by_U.S._law._Dissemination
+    to_non-U.S._persons_whether_in_the_United_States_or_abroad_requires
+    an_export_license_or_other_authorization.
+
+    Contractor_Name:________Raytheon_Company
+    Contractor_Address:_____6825_Pine_Street,_Suite_340
+    ________________________Mail_Stop_B8
+    ________________________Omaha,_NE_68106
+    ________________________402.291.0100
+
+    See_the_AWIPS_II_Master_Rights_File_("Master_Rights_File.pdf")_for
+    further_licensing_information.
+-->
+<gridProductDescriptions>
+    <default>
+        <matches>
+            <match pattern="^AWIPS.*">
+             <filename />
+            </match>
+        </matches>
+
+        <dataTime>
+            <formattedRefTime dateFormat="yyyy-MM-dd HH:mm:ss">
+                <attribute name="time_origin" />
+            </formattedRefTime>
+        </dataTime>
+
+        <level>
+            <masterLevel>
+                <value value="EA" />
+            </masterLevel>
+            <levelOneValue>
+                <value value="0.0" />
+            </levelOneValue>
+        </level>
+    
+        <datasetId>
+            <value value="AircraftDoppler" />
+        </datasetId>
+
+        <coverage>
+            <latLonGridCoverage />
+            <coordinateLists>
+                <latitude>
+                    <variable name="lats" />
+                </latitude>
+                <longitude>
+                    <variable name="lons" />
+                </longitude>
+            </coordinateLists>
+        </coverage>
+    </default>
+
+    <description>
+        <data>
+             <variable name="PSSF" />
+        </data>
+        <parameter>
+            <abbreviation>
+                <value value="PSSF" />
+            </abbreviation>
+            <name>
+                <value value="Potential Inundation" />
+            </name>
+            <units>
+                <value value="m" />
+            </units>
+        </parameter>
+
+    </description>
+<description>
+    <data>
+      <variable name="MAXREFLECTIVITY" />
+    </data>
+    <parameter>
+    <!-- This needs to be validated! -->
+      <abbreviation>
+        <value value="ReflectivityMax" />
+      </abbreviation>
+      <name>
+        <value value="Maximum Reflectivity" />
+      </name>
+      <units>
+        <value value="dBZ" />
+      </units>
+    </parameter>
+  </description>
+
+<description>
+  <level>
+            <masterLevel>
+                <value value="FHAG" />
+            </masterLevel>
+            <levelOneValue>
+                <value value="500.0" />
+            </levelOneValue>
+        </level>
+    <data>
+      <variable name="u_00500" />
+    </data>
+    <parameter>
+    <!-- This needs to be validated! -->
+      <abbreviation>
+        <value value="uW" />
+      </abbreviation>
+      <name>
+        <value value="uW-500M" />
+      </name>
+      <units>
+        <value value="kts" />
+      </units>
+    </parameter>
+  </description>
+
+
+<description>
+ <level>
+            <masterLevel>
+                <value value="FHAG" />
+            </masterLevel>
+            <levelOneValue>
+                <value value="1000.0" />
+            </levelOneValue>
+        </level>
+    <data>
+      <variable name="u_01000" />
+    </data>
+    <parameter>
+    <!-- This needs to be validated! -->
+      <abbreviation>
+        <value value="uW" />
+      </abbreviation>
+      <name>
+        <value value="uW-1000M" />
+      </name>
+      <units>
+        <value value="kts" />
+      </units>
+    </parameter>
+  </description>
+
+
+<description>
+ <level>
+            <masterLevel>
+                <value value="FHAG" />
+            </masterLevel>
+            <levelOneValue>
+                <value value="1500.0" />
+            </levelOneValue>
+        </level>
+    <data>
+      <variable name="u_01500" />
+    </data>
+    <parameter>
+    <!-- This needs to be validated! -->
+      <abbreviation>
+        <value value="uW" />
+      </abbreviation>
+      <name>
+        <value value="uW-1500M" />
+      </name>
+      <units>
+        <value value="kts" />
+      </units>
+    </parameter>
+  </description>
+
+<description>
+ <level>
+            <masterLevel>
+                <value value="FHAG" />
+            </masterLevel>
+            <levelOneValue>
+                <value value="2000.0" />
+            </levelOneValue>
+        </level>
+    <data>
+      <variable name="u_02000" />
+    </data>
+    <parameter>
+    <!-- This needs to be validated! -->
+      <abbreviation>
+        <value value="uW" />
+      </abbreviation>
+      <name>
+        <value value="uW-2000M" />
+      </name>
+      <units>
+        <value value="kts" />
+      </units>
+    </parameter>
+  </description>
+
+
+<description>
+ <level>
+            <masterLevel>
+                <value value="FHAG" />
+            </masterLevel>
+            <levelOneValue>
+                <value value="2500.0" />
+            </levelOneValue>
+        </level>
+    <data>
+      <variable name="u_02500" />
+    </data>
+    <parameter>
+    <!-- This needs to be validated! -->
+      <abbreviation>
+        <value value="uW" />
+      </abbreviation>
+      <name>
+        <value value="uW-2500M" />
+      </name>
+      <units>
+        <value value="kts" />
+      </units>
+    </parameter>
+  </description>
+
+
+<description>
+ <level>
+            <masterLevel>
+                <value value="FHAG" />
+            </masterLevel>
+            <levelOneValue>
+                <value value="3000.0" />
+            </levelOneValue>
+        </level>
+    <data>
+      <variable name="u_03000" />
+    </data>
+    <parameter>
+    <!-- This needs to be validated! -->
+      <abbreviation>
+        <value value="uW" />
+      </abbreviation>
+      <name>
+        <value value="uW-3000M" />
+      </name>
+      <units>
+        <value value="kts" />
+      </units>
+    </parameter>
+  </description>
+
+<description>
+ <level>
+            <masterLevel>
+                <value value="FHAG" />
+            </masterLevel>
+            <levelOneValue>
+                <value value="3500.0" />
+            </levelOneValue>
+        </level>
+    <data>
+      <variable name="u_03500" />
+    </data>
+    <parameter>
+    <!-- This needs to be validated! -->
+      <abbreviation>
+        <value value="uW" />
+      </abbreviation>
+      <name>
+        <value value="uW-3500M" />
+      </name>
+      <units>
+        <value value="kts" />
+      </units>
+    </parameter>
+  </description>
+
+<description>
+ <level>
+            <masterLevel>
+                <value value="FHAG" />
+            </masterLevel>
+            <levelOneValue>
+                <value value="4000.0" />
+            </levelOneValue>
+        </level>
+    <data>
+      <variable name="u_04000" />
+    </data>
+    <parameter>
+    <!-- This needs to be validated! -->
+      <abbreviation>
+        <value value="uW" />
+      </abbreviation>
+      <name>
+        <value value="uW-4000M" />
+      </name>
+      <units>
+        <value value="kts" />
+      </units>
+    </parameter>
+  </description>
+
+
+
+<description>
+ <level>
+            <masterLevel>
+                <value value="FHAG" />
+            </masterLevel>
+            <levelOneValue>
+                <value value="4500.0" />
+            </levelOneValue>
+        </level>
+    <data>
+      <variable name="u_04500" />
+    </data>
+    <parameter>
+    <!-- This needs to be validated! -->
+      <abbreviation>
+        <value value="uW" />
+      </abbreviation>
+      <name>
+        <value value="uW-4500M" />
+      </name>
+      <units>
+        <value value="kts" />
+      </units>
+    </parameter>
+  </description>
+
+
+
+
+<description>
+ <level>
+            <masterLevel>
+                <value value="FHAG" />
+            </masterLevel>
+            <levelOneValue>
+                <value value="5000.0" />
+            </levelOneValue>
+        </level>
+    <data>
+      <variable name="u_05000" />
+    </data>
+    <parameter>
+    <!-- This needs to be validated! -->
+      <abbreviation>
+        <value value="uW" />
+      </abbreviation>
+      <name>
+        <value value="uW-5000M" />
+      </name>
+      <units>
+        <value value="kts" />
+      </units>
+    </parameter>
+  </description>
+
+
+
+<description>
+ <level>
+            <masterLevel>
+                <value value="FHAG" />
+            </masterLevel>
+            <levelOneValue>
+                <value value="5500.0" />
+            </levelOneValue>
+        </level>
+    <data>
+      <variable name="u_05500" />
+    </data>
+    <parameter>
+    <!-- This needs to be validated! -->
+      <abbreviation>
+        <value value="uW" />
+      </abbreviation>
+      <name>
+        <value value="uW-5500M" />
+      </name>
+      <units>
+        <value value="kts" />
+      </units>
+    </parameter>
+  </description>
+
+
+<description>
+ <level>
+            <masterLevel>
+                <value value="FHAG" />
+            </masterLevel>
+            <levelOneValue>
+                <value value="6000.0" />
+            </levelOneValue>
+        </level>
+    <data>
+      <variable name="u_06000" />
+    </data>
+    <parameter>
+    <!-- This needs to be validated! -->
+      <abbreviation>
+        <value value="uW" />
+      </abbreviation>
+      <name>
+        <value value="uW-6000M" />
+      </name>
+      <units>
+        <value value="kts" />
+      </units>
+    </parameter>
+  </description>
+
+
+<description>
+ <level>
+            <masterLevel>
+                <value value="FHAG" />
+            </masterLevel>
+            <levelOneValue>
+                <value value="6500.0" />
+            </levelOneValue>
+        </level>
+    <data>
+      <variable name="u_06500" />
+    </data>
+    <parameter>
+    <!-- This needs to be validated! -->
+      <abbreviation>
+        <value value="uW" />
+      </abbreviation>
+      <name>
+        <value value="uW-6500M" />
+      </name>
+      <units>
+        <value value="kts" />
+      </units>
+    </parameter>
+  </description>
+
+
+<description>
+ <level>
+            <masterLevel>
+                <value value="FHAG" />
+            </masterLevel>
+            <levelOneValue>
+                <value value="7000.0" />
+            </levelOneValue>
+        </level>
+    <data>
+      <variable name="u_07000" />
+    </data>
+    <parameter>
+    <!-- This needs to be validated! -->
+      <abbreviation>
+        <value value="uW" />
+      </abbreviation>
+      <name>
+        <value value="uW-7000M" />
+      </name>
+      <units>
+        <value value="kts" />
+      </units>
+    </parameter>
+  </description>
+
+
+<description>
+ <level>
+            <masterLevel>
+                <value value="FHAG" />
+            </masterLevel>
+            <levelOneValue>
+                <value value="7500.0" />
+            </levelOneValue>
+        </level>
+    <data>
+      <variable name="u_07500" />
+    </data>
+    <parameter>
+    <!-- This needs to be validated! -->
+      <abbreviation>
+        <value value="uW" />
+      </abbreviation>
+      <name>
+        <value value="uW-7500M" />
+      </name>
+      <units>
+        <value value="kts" />
+      </units>
+    </parameter>
+  </description>
+
+
+<description>
+ <level>
+            <masterLevel>
+                <value value="FHAG" />
+            </masterLevel>
+            <levelOneValue>
+                <value value="8000.0" />
+            </levelOneValue>
+        </level>
+    <data>
+      <variable name="u_08000" />
+    </data>
+    <parameter>
+    <!-- This needs to be validated! -->
+      <abbreviation>
+        <value value="uW" />
+      </abbreviation>
+      <name>
+        <value value="uW-8000M" />
+      </name>
+      <units>
+        <value value="kts" />
+      </units>
+    </parameter>
+  </description>
+
+
+<description>
+ <level>
+            <masterLevel>
+                <value value="FHAG" />
+            </masterLevel>
+            <levelOneValue>
+                <value value="8500.0" />
+            </levelOneValue>
+        </level>
+    <data>
+      <variable name="u_08500" />
+    </data>
+    <parameter>
+    <!-- This needs to be validated! -->
+      <abbreviation>
+        <value value="uW" />
+      </abbreviation>
+      <name>
+        <value value="uW-8500M" />
+      </name>
+      <units>
+        <value value="kts" />
+      </units>
+    </parameter>
+  </description>
+
+
+<description>
+ <level>
+            <masterLevel>
+                <value value="FHAG" />
+            </masterLevel>
+            <levelOneValue>
+                <value value="9000.0" />
+            </levelOneValue>
+        </level>
+    <data>
+      <variable name="u_09000" />
+    </data>
+    <parameter>
+    <!-- This needs to be validated! -->
+      <abbreviation>
+        <value value="uW" />
+      </abbreviation>
+      <name>
+        <value value="uW-9000M" />
+      </name>
+      <units>
+        <value value="kts" />
+      </units>
+    </parameter>
+  </description>
+
+
+<description>
+ <level>
+            <masterLevel>
+                <value value="FHAG" />
+            </masterLevel>
+            <levelOneValue>
+                <value value="9500.0" />
+            </levelOneValue>
+        </level>
+    <data>
+      <variable name="u_09500" />
+    </data>
+    <parameter>
+    <!-- This needs to be validated! -->
+      <abbreviation>
+        <value value="uW" />
+      </abbreviation>
+      <name>
+        <value value="uW-9500M" />
+      </name>
+      <units>
+        <value value="kts" />
+      </units>
+    </parameter>
+  </description>
+
+<description>
+ <level>
+            <masterLevel>
+                <value value="FHAG" />
+            </masterLevel>
+            <levelOneValue>
+                <value value="10000.0" />
+            </levelOneValue>
+        </level>
+    <data>
+      <variable name="u_10000" />
+    </data>
+    <parameter>
+    <!-- This needs to be validated! -->
+      <abbreviation>
+        <value value="uW" />
+      </abbreviation>
+      <name>
+        <value value="uW-10000M" />
+      </name>
+      <units>
+        <value value="kts" />
+      </units>
+    </parameter>
+  </description>
+
+
+<description>
+ <level>
+            <masterLevel>
+                <value value="FHAG" />
+            </masterLevel>
+            <levelOneValue>
+                <value value="10500.0" />
+            </levelOneValue>
+        </level>
+    <data>
+      <variable name="u_10500" />
+    </data>
+    <parameter>
+    <!-- This needs to be validated! -->
+      <abbreviation>
+        <value value="uW" />
+      </abbreviation>
+      <name>
+        <value value="uW-10500M" />
+      </name>
+      <units>
+        <value value="kts" />
+      </units>
+    </parameter>
+  </description>
+
+<description>
+ <level>
+            <masterLevel>
+                <value value="FHAG" />
+            </masterLevel>
+            <levelOneValue>
+                <value value="11000.0" />
+            </levelOneValue>
+        </level>
+    <data>
+      <variable name="u_11000" />
+    </data>
+    <parameter>
+    <!-- This needs to be validated! -->
+      <abbreviation>
+        <value value="uW" />
+      </abbreviation>
+      <name>
+        <value value="uW-11000M" />
+      </name>
+      <units>
+        <value value="kts" />
+      </units>
+    </parameter>
+  </description>
+
+<description>
+ <level>
+            <masterLevel>
+                <value value="FHAG" />
+            </masterLevel>
+            <levelOneValue>
+                <value value="11500.0" />
+            </levelOneValue>
+        </level>
+    <data>
+      <variable name="u_11500" />
+    </data>
+    <parameter>
+    <!-- This needs to be validated! -->
+      <abbreviation>
+        <value value="uW" />
+      </abbreviation>
+      <name>
+        <value value="uW-11500M" />
+      </name>
+      <units>
+        <value value="kts" />
+      </units>
+    </parameter>
+  </description>
+
+<description>
+ <level>
+            <masterLevel>
+                <value value="FHAG" />
+            </masterLevel>
+            <levelOneValue>
+                <value value="12000.0" />
+            </levelOneValue>
+        </level>
+    <data>
+      <variable name="u_12000" />
+    </data>
+    <parameter>
+    <!-- This needs to be validated! -->
+      <abbreviation>
+        <value value="uW" />
+      </abbreviation>
+      <name>
+        <value value="uW-12000M" />
+      </name>
+      <units>
+        <value value="kts" />
+      </units>
+    </parameter>
+  </description>
+
+<description>
+ <level>
+            <masterLevel>
+                <value value="FHAG" />
+            </masterLevel>
+            <levelOneValue>
+                <value value="12500.0" />
+            </levelOneValue>
+        </level>
+    <data>
+      <variable name="u_12500" />
+    </data>
+    <parameter>
+    <!-- This needs to be validated! -->
+      <abbreviation>
+        <value value="uW" />
+      </abbreviation>
+      <name>
+        <value value="uW-12500M" />
+      </name>
+      <units>
+        <value value="kts" />
+      </units>
+    </parameter>
+  </description>
+
+<description>
+ <level>
+            <masterLevel>
+                <value value="FHAG" />
+            </masterLevel>
+            <levelOneValue>
+                <value value="13000.0" />
+            </levelOneValue>
+        </level>
+    <data>
+      <variable name="u_13000" />
+    </data>
+    <parameter>
+    <!-- This needs to be validated! -->
+      <abbreviation>
+        <value value="uW" />
+      </abbreviation>
+      <name>
+        <value value="uW-13000M" />
+      </name>
+      <units>
+        <value value="kts" />
+      </units>
+    </parameter>
+  </description>
+
+<description>
+ <level>
+            <masterLevel>
+                <value value="FHAG" />
+            </masterLevel>
+            <levelOneValue>
+                <value value="13500.0" />
+            </levelOneValue>
+        </level>
+    <data>
+      <variable name="u_13500" />
+    </data>
+    <parameter>
+    <!-- This needs to be validated! -->
+      <abbreviation>
+        <value value="uW" />
+      </abbreviation>
+      <name>
+        <value value="uW-13500M" />
+      </name>
+      <units>
+        <value value="kts" />
+      </units>
+    </parameter>
+  </description>
+
+<description>
+ <level>
+            <masterLevel>
+                <value value="FHAG" />
+            </masterLevel>
+            <levelOneValue>
+                <value value="14000.0" />
+            </levelOneValue>
+        </level>
+    <data>
+      <variable name="u_14000" />
+    </data>
+    <parameter>
+    <!-- This needs to be validated! -->
+      <abbreviation>
+        <value value="uW" />
+      </abbreviation>
+      <name>
+        <value value="uW-14000M" />
+      </name>
+      <units>
+        <value value="kts" />
+      </units>
+    </parameter>
+  </description>
+
+<description>
+ <level>
+            <masterLevel>
+                <value value="FHAG" />
+            </masterLevel>
+            <levelOneValue>
+                <value value="14500.0" />
+            </levelOneValue>
+        </level>
+    <data>
+      <variable name="u_14500" />
+    </data>
+    <parameter>
+    <!-- This needs to be validated! -->
+      <abbreviation>
+        <value value="uW" />
+      </abbreviation>
+      <name>
+        <value value="uW-14500M" />
+      </name>
+      <units>
+        <value value="kts" />
+      </units>
+    </parameter>
+  </description>
+
+<description>
+ <level>
+            <masterLevel>
+                <value value="FHAG" />
+            </masterLevel>
+            <levelOneValue>
+                <value value="15000.0" />
+            </levelOneValue>
+        </level>
+    <data>
+      <variable name="u_15000" />
+    </data>
+    <parameter>
+    <!-- This needs to be validated! -->
+      <abbreviation>
+        <value value="uW" />
+      </abbreviation>
+      <name>
+        <value value="uW-15000M" />
+      </name>
+      <units>
+        <value value="kts" />
+      </units>
+    </parameter>
+  </description>
+
+
+
+<description>
+ <level>
+            <masterLevel>
+                <value value="FHAG" />
+            </masterLevel>
+            <levelOneValue>
+                <value value="15500.0" />
+            </levelOneValue>
+        </level>
+    <data>
+      <variable name="u_15500" />
+    </data>
+    <parameter>
+    <!-- This needs to be validated! -->
+      <abbreviation>
+        <value value="uW" />
+      </abbreviation>
+      <name>
+        <value value="uW-15500M" />
+      </name>
+      <units>
+        <value value="kts" />
+      </units>
+    </parameter>
+  </description>
+
+<description>
+ <level>
+            <masterLevel>
+                <value value="FHAG" />
+            </masterLevel>
+            <levelOneValue>
+                <value value="16000.0" />
+            </levelOneValue>
+        </level>
+    <data>
+      <variable name="u_16000" />
+    </data>
+    <parameter>
+    <!-- This needs to be validated! -->
+      <abbreviation>
+        <value value="uW" />
+      </abbreviation>
+      <name>
+        <value value="uW-16000M" />
+      </name>
+      <units>
+        <value value="kts" />
+      </units>
+    </parameter>
+  </description>
+
+
+<description>
+ <level>
+            <masterLevel>
+                <value value="FHAG" />
+            </masterLevel>
+            <levelOneValue>
+                <value value="16500.0" />
+            </levelOneValue>
+        </level>
+    <data>
+      <variable name="u_16500" />
+    </data>
+    <parameter>
+    <!-- This needs to be validated! -->
+      <abbreviation>
+        <value value="uW" />
+      </abbreviation>
+      <name>
+        <value value="uW-16500M" />
+      </name>
+      <units>
+        <value value="kts" />
+      </units>
+    </parameter>
+  </description>
+
+
+<description>
+ <level>
+            <masterLevel>
+                <value value="FHAG" />
+            </masterLevel>
+            <levelOneValue>
+                <value value="17000.0" />
+            </levelOneValue>
+        </level>
+    <data>
+      <variable name="u_17000" />
+    </data>
+    <parameter>
+    <!-- This needs to be validated! -->
+      <abbreviation>
+        <value value="uW" />
+      </abbreviation>
+      <name>
+        <value value="uW-17000M" />
+      </name>
+      <units>
+        <value value="kts" />
+      </units>
+    </parameter>
+  </description>
+
+
+<description>
+ <level>
+            <masterLevel>
+                <value value="FHAG" />
+            </masterLevel>
+            <levelOneValue>
+                <value value="17500.0" />
+            </levelOneValue>
+        </level>
+    <data>
+      <variable name="u_17500" />
+    </data>
+    <parameter>
+    <!-- This needs to be validated! -->
+      <abbreviation>
+        <value value="uW" />
+      </abbreviation>
+      <name>
+        <value value="uW-17500M" />
+      </name>
+      <units>
+        <value value="kts" />
+      </units>
+    </parameter>
+  </description>
+
+
+
+
+
+<description>
+ <level>
+            <masterLevel>
+                <value value="FHAG" />
+            </masterLevel>
+            <levelOneValue>
+                <value value="18000.0" />
+            </levelOneValue>
+        </level>
+    <data>
+      <variable name="u_18000" />
+    </data>
+    <parameter>
+    <!-- This needs to be validated! -->
+      <abbreviation>
+        <value value="uW" />
+      </abbreviation>
+      <name>
+        <value value="uW-18000M" />
+      </name>
+      <units>
+        <value value="kts" />
+      </units>
+    </parameter>
+  </description>
+
+
+
+<description>
+  <level>
+            <masterLevel>
+                <value value="FHAG" />
+            </masterLevel>
+            <levelOneValue>
+                <value value="500.0" />
+            </levelOneValue>
+        </level>
+    <data>
+      <variable name="v_00500" />
+    </data>
+    <parameter>
+    <!-- This needs to be validated! -->
+      <abbreviation>
+        <value value="vW" />
+      </abbreviation>
+      <name>
+        <value value="vW-500M" />
+      </name>
+      <units>
+        <value value="kts" />
+      </units>
+    </parameter>
+  </description>
+
+
+<description>
+ <level>
+            <masterLevel>
+                <value value="FHAG" />
+            </masterLevel>
+            <levelOneValue>
+                <value value="1000.0" />
+            </levelOneValue>
+        </level>
+    <data>
+      <variable name="v_01000" />
+    </data>
+    <parameter>
+    <!-- This needs to be validated! -->
+      <abbreviation>
+        <value value="vW" />
+      </abbreviation>
+      <name>
+        <value value="vW-1000M" />
+      </name>
+      <units>
+        <value value="kts" />
+      </units>
+    </parameter>
+  </description>
+
+
+<description>
+ <level>
+            <masterLevel>
+                <value value="FHAG" />
+            </masterLevel>
+            <levelOneValue>
+                <value value="1500.0" />
+            </levelOneValue>
+        </level>
+    <data>
+      <variable name="v_01500" />
+    </data>
+    <parameter>
+    <!-- This needs to be validated! -->
+      <abbreviation>
+        <value value="vW" />
+      </abbreviation>
+      <name>
+        <value value="vW-1500M" />
+      </name>
+      <units>
+        <value value="kts" />
+      </units>
+    </parameter>
+  </description>
+
+<description>
+ <level>
+            <masterLevel>
+                <value value="FHAG" />
+            </masterLevel>
+            <levelOneValue>
+                <value value="2000.0" />
+            </levelOneValue>
+        </level>
+    <data>
+      <variable name="v_02000" />
+    </data>
+    <parameter>
+    <!-- This needs to be validated! -->
+      <abbreviation>
+        <value value="vW" />
+      </abbreviation>
+      <name>
+        <value value="vW-2000M" />
+      </name>
+      <units>
+        <value value="kts" />
+      </units>
+    </parameter>
+  </description>
+
+
+<description>
+ <level>
+            <masterLevel>
+                <value value="FHAG" />
+            </masterLevel>
+            <levelOneValue>
+                <value value="2500.0" />
+            </levelOneValue>
+        </level>
+    <data>
+      <variable name="v_02500" />
+    </data>
+    <parameter>
+    <!-- This needs to be validated! -->
+      <abbreviation>
+        <value value="vW" />
+      </abbreviation>
+      <name>
+        <value value="vW-2500M" />
+      </name>
+      <units>
+        <value value="kts" />
+      </units>
+    </parameter>
+  </description>
+
+
+<description>
+ <level>
+            <masterLevel>
+                <value value="FHAG" />
+            </masterLevel>
+            <levelOneValue>
+                <value value="3000.0" />
+            </levelOneValue>
+        </level>
+    <data>
+      <variable name="v_03000" />
+    </data>
+    <parameter>
+    <!-- This needs to be validated! -->
+      <abbreviation>
+        <value value="vW" />
+      </abbreviation>
+      <name>
+        <value value="vW-3000M" />
+      </name>
+      <units>
+        <value value="kts" />
+      </units>
+    </parameter>
+  </description>
+
+<description>
+ <level>
+            <masterLevel>
+                <value value="FHAG" />
+            </masterLevel>
+            <levelOneValue>
+                <value value="3500.0" />
+            </levelOneValue>
+        </level>
+    <data>
+      <variable name="v_03500" />
+    </data>
+    <parameter>
+    <!-- This needs to be validated! -->
+      <abbreviation>
+        <value value="vW" />
+      </abbreviation>
+      <name>
+        <value value="vW-3500M" />
+      </name>
+      <units>
+        <value value="kts" />
+      </units>
+    </parameter>
+  </description>
+
+<description>
+ <level>
+            <masterLevel>
+                <value value="FHAG" />
+            </masterLevel>
+            <levelOneValue>
+                <value value="4000.0" />
+            </levelOneValue>
+        </level>
+    <data>
+      <variable name="v_04000" />
+    </data>
+    <parameter>
+    <!-- This needs to be validated! -->
+      <abbreviation>
+        <value value="vW" />
+      </abbreviation>
+      <name>
+        <value value="vW-4000M" />
+      </name>
+      <units>
+        <value value="kts" />
+      </units>
+    </parameter>
+  </description>
+
+
+
+<description>
+ <level>
+            <masterLevel>
+                <value value="FHAG" />
+            </masterLevel>
+            <levelOneValue>
+                <value value="4500.0" />
+            </levelOneValue>
+        </level>
+    <data>
+      <variable name="v_04500" />
+    </data>
+    <parameter>
+    <!-- This needs to be validated! -->
+      <abbreviation>
+        <value value="vW" />
+      </abbreviation>
+      <name>
+        <value value="vW-4500M" />
+      </name>
+      <units>
+        <value value="kts" />
+      </units>
+    </parameter>
+  </description>
+
+
+
+
+<description>
+ <level>
+            <masterLevel>
+                <value value="FHAG" />
+            </masterLevel>
+            <levelOneValue>
+                <value value="5000.0" />
+            </levelOneValue>
+        </level>
+    <data>
+      <variable name="v_05000" />
+    </data>
+    <parameter>
+    <!-- This needs to be validated! -->
+      <abbreviation>
+        <value value="vW" />
+      </abbreviation>
+      <name>
+        <value value="vW-5000M" />
+      </name>
+      <units>
+        <value value="kts" />
+      </units>
+    </parameter>
+  </description>
+
+
+
+<description>
+ <level>
+            <masterLevel>
+                <value value="FHAG" />
+            </masterLevel>
+            <levelOneValue>
+                <value value="5500.0" />
+            </levelOneValue>
+        </level>
+    <data>
+      <variable name="v_05500" />
+    </data>
+    <parameter>
+    <!-- This needs to be validated! -->
+      <abbreviation>
+        <value value="vW" />
+      </abbreviation>
+      <name>
+        <value value="vW-5500M" />
+      </name>
+      <units>
+        <value value="kts" />
+      </units>
+    </parameter>
+  </description>
+
+
+<description>
+ <level>
+            <masterLevel>
+                <value value="FHAG" />
+            </masterLevel>
+            <levelOneValue>
+                <value value="6000.0" />
+            </levelOneValue>
+        </level>
+    <data>
+      <variable name="v_06000" />
+    </data>
+    <parameter>
+    <!-- This needs to be validated! -->
+      <abbreviation>
+        <value value="vW" />
+      </abbreviation>
+      <name>
+        <value value="vW-6000M" />
+      </name>
+      <units>
+        <value value="kts" />
+      </units>
+    </parameter>
+  </description>
+
+
+<description>
+ <level>
+            <masterLevel>
+                <value value="FHAG" />
+            </masterLevel>
+            <levelOneValue>
+                <value value="6500.0" />
+            </levelOneValue>
+        </level>
+    <data>
+      <variable name="v_06500" />
+    </data>
+    <parameter>
+    <!-- This needs to be validated! -->
+      <abbreviation>
+        <value value="vW" />
+      </abbreviation>
+      <name>
+        <value value="vW-6500M" />
+      </name>
+      <units>
+        <value value="kts" />
+      </units>
+    </parameter>
+  </description>
+
+
+<description>
+ <level>
+            <masterLevel>
+                <value value="FHAG" />
+            </masterLevel>
+            <levelOneValue>
+                <value value="7000.0" />
+            </levelOneValue>
+        </level>
+    <data>
+      <variable name="v_07000" />
+    </data>
+    <parameter>
+    <!-- This needs to be validated! -->
+      <abbreviation>
+        <value value="vW" />
+      </abbreviation>
+      <name>
+        <value value="vW-7000M" />
+      </name>
+      <units>
+        <value value="kts" />
+      </units>
+    </parameter>
+  </description>
+
+
+<description>
+ <level>
+            <masterLevel>
+                <value value="FHAG" />
+            </masterLevel>
+            <levelOneValue>
+                <value value="7500.0" />
+            </levelOneValue>
+        </level>
+    <data>
+      <variable name="v_07500" />
+    </data>
+    <parameter>
+    <!-- This needs to be validated! -->
+      <abbreviation>
+        <value value="vW" />
+      </abbreviation>
+      <name>
+        <value value="vW-7500M" />
+      </name>
+      <units>
+        <value value="kts" />
+      </units>
+    </parameter>
+  </description>
+
+
+<description>
+ <level>
+            <masterLevel>
+                <value value="FHAG" />
+            </masterLevel>
+            <levelOneValue>
+                <value value="8000.0" />
+            </levelOneValue>
+        </level>
+    <data>
+      <variable name="v_08000" />
+    </data>
+    <parameter>
+    <!-- This needs to be validated! -->
+      <abbreviation>
+        <value value="vW" />
+      </abbreviation>
+      <name>
+        <value value="vW-8000M" />
+      </name>
+      <units>
+        <value value="kts" />
+      </units>
+    </parameter>
+  </description>
+
+
+<description>
+ <level>
+            <masterLevel>
+                <value value="FHAG" />
+            </masterLevel>
+            <levelOneValue>
+                <value value="8500.0" />
+            </levelOneValue>
+        </level>
+    <data>
+      <variable name="v_08500" />
+    </data>
+    <parameter>
+    <!-- This needs to be validated! -->
+      <abbreviation>
+        <value value="vW" />
+      </abbreviation>
+      <name>
+        <value value="vW-8500M" />
+      </name>
+      <units>
+        <value value="kts" />
+      </units>
+    </parameter>
+  </description>
+
+
+<description>
+ <level>
+            <masterLevel>
+                <value value="FHAG" />
+            </masterLevel>
+            <levelOneValue>
+                <value value="9000.0" />
+            </levelOneValue>
+        </level>
+    <data>
+      <variable name="v_09000" />
+    </data>
+    <parameter>
+    <!-- This needs to be validated! -->
+      <abbreviation>
+        <value value="vW" />
+      </abbreviation>
+      <name>
+        <value value="vW-9000M" />
+      </name>
+      <units>
+        <value value="kts" />
+      </units>
+    </parameter>
+  </description>
+
+
+<description>
+ <level>
+            <masterLevel>
+                <value value="FHAG" />
+            </masterLevel>
+            <levelOneValue>
+                <value value="9500.0" />
+            </levelOneValue>
+        </level>
+    <data>
+      <variable name="v_09500" />
+    </data>
+    <parameter>
+    <!-- This needs to be validated! -->
+      <abbreviation>
+        <value value="vW" />
+      </abbreviation>
+      <name>
+        <value value="vW-9500M" />
+      </name>
+      <units>
+        <value value="kts" />
+      </units>
+    </parameter>
+  </description>
+
+<description>
+ <level>
+            <masterLevel>
+                <value value="FHAG" />
+            </masterLevel>
+            <levelOneValue>
+                <value value="10000.0" />
+            </levelOneValue>
+        </level>
+    <data>
+      <variable name="v_10000" />
+    </data>
+    <parameter>
+    <!-- This needs to be validated! -->
+      <abbreviation>
+        <value value="vW" />
+      </abbreviation>
+      <name>
+        <value value="vW-10000M" />
+      </name>
+      <units>
+        <value value="kts" />
+      </units>
+    </parameter>
+  </description>
+
+
+<description>
+ <level>
+            <masterLevel>
+                <value value="FHAG" />
+            </masterLevel>
+            <levelOneValue>
+                <value value="10500.0" />
+            </levelOneValue>
+        </level>
+    <data>
+      <variable name="v_10500" />
+    </data>
+    <parameter>
+    <!-- This needs to be validated! -->
+      <abbreviation>
+        <value value="vW" />
+      </abbreviation>
+      <name>
+        <value value="vW-10500M" />
+      </name>
+      <units>
+        <value value="kts" />
+      </units>
+    </parameter>
+  </description>
+
+<description>
+ <level>
+            <masterLevel>
+                <value value="FHAG" />
+            </masterLevel>
+            <levelOneValue>
+                <value value="11000.0" />
+            </levelOneValue>
+        </level>
+    <data>
+      <variable name="v_11000" />
+    </data>
+    <parameter>
+    <!-- This needs to be validated! -->
+      <abbreviation>
+        <value value="vW" />
+      </abbreviation>
+      <name>
+        <value value="vW-11000M" />
+      </name>
+      <units>
+        <value value="kts" />
+      </units>
+    </parameter>
+  </description>
+
+<description>
+ <level>
+            <masterLevel>
+                <value value="FHAG" />
+            </masterLevel>
+            <levelOneValue>
+                <value value="11500.0" />
+            </levelOneValue>
+        </level>
+    <data>
+      <variable name="v_11500" />
+    </data>
+    <parameter>
+    <!-- This needs to be validated! -->
+      <abbreviation>
+        <value value="vW" />
+      </abbreviation>
+      <name>
+        <value value="vW-11500M" />
+      </name>
+      <units>
+        <value value="kts" />
+      </units>
+    </parameter>
+  </description>
+
+<description>
+ <level>
+            <masterLevel>
+                <value value="FHAG" />
+            </masterLevel>
+            <levelOneValue>
+                <value value="12000.0" />
+            </levelOneValue>
+        </level>
+    <data>
+      <variable name="v_12000" />
+    </data>
+    <parameter>
+    <!-- This needs to be validated! -->
+      <abbreviation>
+        <value value="vW" />
+      </abbreviation>
+      <name>
+        <value value="vW-12000M" />
+      </name>
+      <units>
+        <value value="kts" />
+      </units>
+    </parameter>
+  </description>
+
+<description>
+ <level>
+            <masterLevel>
+                <value value="FHAG" />
+            </masterLevel>
+            <levelOneValue>
+                <value value="12500.0" />
+            </levelOneValue>
+        </level>
+    <data>
+      <variable name="v_12500" />
+    </data>
+    <parameter>
+    <!-- This needs to be validated! -->
+      <abbreviation>
+        <value value="vW" />
+      </abbreviation>
+      <name>
+        <value value="vW-12500M" />
+      </name>
+      <units>
+        <value value="kts" />
+      </units>
+    </parameter>
+  </description>
+
+<description>
+ <level>
+            <masterLevel>
+                <value value="FHAG" />
+            </masterLevel>
+            <levelOneValue>
+                <value value="13000.0" />
+            </levelOneValue>
+        </level>
+    <data>
+      <variable name="v_13000" />
+    </data>
+    <parameter>
+    <!-- This needs to be validated! -->
+      <abbreviation>
+        <value value="vW" />
+      </abbreviation>
+      <name>
+        <value value="vW-13000M" />
+      </name>
+      <units>
+        <value value="kts" />
+      </units>
+    </parameter>
+  </description>
+
+<description>
+ <level>
+            <masterLevel>
+                <value value="FHAG" />
+            </masterLevel>
+            <levelOneValue>
+                <value value="13500.0" />
+            </levelOneValue>
+        </level>
+    <data>
+      <variable name="v_13500" />
+    </data>
+    <parameter>
+    <!-- This needs to be validated! -->
+      <abbreviation>
+        <value value="vW" />
+      </abbreviation>
+      <name>
+        <value value="vW-13500M" />
+      </name>
+      <units>
+        <value value="kts" />
+      </units>
+    </parameter>
+  </description>
+
+<description>
+ <level>
+            <masterLevel>
+                <value value="FHAG" />
+            </masterLevel>
+            <levelOneValue>
+                <value value="14000.0" />
+            </levelOneValue>
+        </level>
+    <data>
+      <variable name="v_14000" />
+    </data>
+    <parameter>
+    <!-- This needs to be validated! -->
+      <abbreviation>
+        <value value="vW" />
+      </abbreviation>
+      <name>
+        <value value="vW-14000M" />
+      </name>
+      <units>
+        <value value="kts" />
+      </units>
+    </parameter>
+  </description>
+
+<description>
+ <level>
+            <masterLevel>
+                <value value="FHAG" />
+            </masterLevel>
+            <levelOneValue>
+                <value value="14500.0" />
+            </levelOneValue>
+        </level>
+    <data>
+      <variable name="v_14500" />
+    </data>
+    <parameter>
+    <!-- This needs to be validated! -->
+      <abbreviation>
+        <value value="vW" />
+      </abbreviation>
+      <name>
+        <value value="vW-14500M" />
+      </name>
+      <units>
+        <value value="kts" />
+      </units>
+    </parameter>
+  </description>
+
+<description>
+ <level>
+            <masterLevel>
+                <value value="FHAG" />
+            </masterLevel>
+            <levelOneValue>
+                <value value="15000.0" />
+            </levelOneValue>
+        </level>
+    <data>
+      <variable name="v_15000" />
+    </data>
+    <parameter>
+    <!-- This needs to be validated! -->
+      <abbreviation>
+        <value value="vW" />
+      </abbreviation>
+      <name>
+        <value value="vW-15000M" />
+      </name>
+      <units>
+        <value value="kts" />
+      </units>
+    </parameter>
+  </description>
+
+
+
+<description>
+ <level>
+            <masterLevel>
+                <value value="FHAG" />
+            </masterLevel>
+            <levelOneValue>
+                <value value="15500.0" />
+            </levelOneValue>
+        </level>
+    <data>
+      <variable name="v_15500" />
+    </data>
+    <parameter>
+    <!-- This needs to be validated! -->
+      <abbreviation>
+        <value value="vW" />
+      </abbreviation>
+      <name>
+        <value value="vW-15500M" />
+      </name>
+      <units>
+        <value value="kts" />
+      </units>
+    </parameter>
+  </description>
+
+<description>
+ <level>
+            <masterLevel>
+                <value value="FHAG" />
+            </masterLevel>
+            <levelOneValue>
+                <value value="16000.0" />
+            </levelOneValue>
+        </level>
+    <data>
+      <variable name="v_16000" />
+    </data>
+    <parameter>
+    <!-- This needs to be validated! -->
+      <abbreviation>
+        <value value="vW" />
+      </abbreviation>
+      <name>
+        <value value="vW-16000M" />
+      </name>
+      <units>
+        <value value="kts" />
+      </units>
+    </parameter>
+  </description>
+
+
+<description>
+ <level>
+            <masterLevel>
+                <value value="FHAG" />
+            </masterLevel>
+            <levelOneValue>
+                <value value="16500.0" />
+            </levelOneValue>
+        </level>
+    <data>
+      <variable name="v_16500" />
+    </data>
+    <parameter>
+    <!-- This needs to be validated! -->
+      <abbreviation>
+        <value value="vW" />
+      </abbreviation>
+      <name>
+        <value value="vW-16500M" />
+      </name>
+      <units>
+        <value value="kts" />
+      </units>
+    </parameter>
+  </description>
+
+
+<description>
+ <level>
+            <masterLevel>
+                <value value="FHAG" />
+            </masterLevel>
+            <levelOneValue>
+                <value value="17000.0" />
+            </levelOneValue>
+        </level>
+    <data>
+      <variable name="v_17000" />
+    </data>
+    <parameter>
+    <!-- This needs to be validated! -->
+      <abbreviation>
+        <value value="vW" />
+      </abbreviation>
+      <name>
+        <value value="vW-17000M" />
+      </name>
+      <units>
+        <value value="kts" />
+      </units>
+    </parameter>
+  </description>
+
+
+<description>
+ <level>
+            <masterLevel>
+                <value value="FHAG" />
+            </masterLevel>
+            <levelOneValue>
+                <value value="17500.0" />
+            </levelOneValue>
+        </level>
+    <data>
+      <variable name="v_17500" />
+    </data>
+    <parameter>
+    <!-- This needs to be validated! -->
+      <abbreviation>
+        <value value="vW" />
+      </abbreviation>
+      <name>
+        <value value="vW-17500M" />
+      </name>
+      <units>
+        <value value="kts" />
+      </units>
+    </parameter>
+  </description>
+
+
+<description>
+ <level>
+            <masterLevel>
+                <value value="FHAG" />
+            </masterLevel>
+            <levelOneValue>
+                <value value="18000.0" />
+            </levelOneValue>
+        </level>
+    <data>
+      <variable name="v_18000" />
+    </data>
+    <parameter>
+    <!-- This needs to be validated! -->
+      <abbreviation>
+        <value value="vW" />
+      </abbreviation>
+      <name>
+        <value value="vW-18000M" />
+      </name>
+      <units>
+        <value value="kts" />
+      </units>
+    </parameter>
+  </description>
+
+</gridProductDescriptions>
+

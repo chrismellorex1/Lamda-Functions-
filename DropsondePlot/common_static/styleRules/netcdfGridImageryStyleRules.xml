@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <!--
+        This_software_was_developed_and_/_or_modified_by_Raytheon_Company,
+        pursuant_to_Contract_DG133W-05-CQ-1067_with_the_US_Government.
+        
+        U.S._EXPORT_CONTROLLED_TECHNICAL_DATA
+        This_software_product_contains_export-restricted_data_whose
+        export/transfer/disclosure_is_restricted_by_U.S._law._Dissemination
+        to_non-U.S._persons_whether_in_the_United_States_or_abroad_requires
+        an_export_license_or_other_authorization..
+        
+        Contractor_Name:________Raytheon_Company
+        Contractor_Address:_____6825_Pine_Street,_Suite_340
+        ________________________Mail_Stop_B8
+        ________________________Omaha,_NE_68106
+        ________________________402.291.0100
+        
+        See_the_AWIPS_II_Master_Rights_File_("Master_Rights_File.pdf")_for
+        further_licensing_information.
+    -->
+  <!-- TOWRdocs Header
+        Netcdf Grid Imagery style rules.
+   -->
+   <!-- TOWRdocs Description
+        This file sets style for IMERG and other gridded products currently handled with the netcdfGrid plugin.  This file 
+	controls display legends, units and color tables for the GPM IMERG-Early and IMERG-Late precipitation
+	products. It is a new file not included in the 16.2.1 AWIPS baseline. Configuration for CMORPH is also included
+
+	The default display for gridded data in AWIPS 2 is contour.  An updated to FieldDisplayTypes is added in 
+	this collection under /cave_static/../volumebrowser to make the defaults for IMERG (for example) be "IMAGE" displays.
+	With this implementation, the style rules below are activated.
+
+	The color table and increments below currently match those of the GOES-R WFO collection of localization files.
+    Restart CAVE whenever making changes to this file.  The RR/QPE color table points to the default in the Sat/GOESR-L2 directory.
+
+   -->
+   <!-- TOWRdocs Status
+    	A new file to control style rules for products using the netcdfGrid plugin, currently IMERG and experimental
+        configuration for CMORPH is also added. 
+		3/28/2017 Updated to add GOES-R colormap sub dir, removes Sat subdir.
+   -->
+   <!-- TOWRdocs POC
+        Lee Byerle 3/28/2017
+   -->
+<styleRuleset>
+   <!-- IMERG-Early Precip added April 6 2016 -->
+    <styleRule>
+         <paramLevelMatches> 
+          <parameter>CalPrecGRD</parameter> 
+        </paramLevelMatches> 
+    <imageStyle>
+      <displayUnits>in/hr</displayUnits>
+     <!--  <displayFlags>NoPlane</displayFlags> -->
+      <range scale="LINEAR">
+        <minValue>0</minValue>
+        <maxValue>1.6</maxValue>
+      </range>
+       <defaultColormap>GOES-R/GOESR-L2/RRQPE</defaultColormap> 
+       <!-- <defaultColormap>Grid/gridded data</defaultColormap> -->
+      <!-- <colorbarLabeling>
+         <increment>0.01</increment>
+      </colorbarLabeling>  -->
+       <colorbarLabeling>
+        <values>0.01 0.02 0.03 0.05 0.08 0.1 0.3 0.4 0.5 0.75 1 1.2 1.4 1.6</values>
+      </colorbarLabeling>
+    </imageStyle>
+    </styleRule>
+
+    <!-- IMERG-Early Precip Error added April 6 2016 -->
+    <styleRule>
+     <paramLevelMatches>
+      <parameter>CalPrecErGRD</parameter>
+    </paramLevelMatches>
+    <imageStyle>
+      <displayUnits>in/hr</displayUnits>
+     <!--  <displayFlags>NoPlane</displayFlags> -->
+      <range scale="LINEAR">
+        <minValue>1</minValue>
+        <maxValue>8</maxValue>
+      </range>
+      <!-- <range scale="LINEAR">
+        <minValue>30</minValue>
+        <maxValue>400</maxValue>
+      </range> -->
+      <defaultColormap>GOES-R/GOESR-L2/RRQPE</defaultColormap>
+      <!-- <defaultColormap>Grid/gridded data</defaultColormap> -->
+        <colorbarLabeling>
+         <increment>1</increment>
+      </colorbarLabeling>
+       <!-- <colorbarLabeling>
+        <values>5 10 15 20</values> 
+      </colorbarLabeling>  -->
+    </imageStyle>
+    </styleRule>
+
+   <!-- IMERG-Late Precip added April 6 2016 -->
+    <styleRule>
+         <paramLevelMatches>
+          <parameter>CalPrecLGRD</parameter>
+        </paramLevelMatches>
+    <imageStyle>
+      <displayUnits>in/hr</displayUnits>
+     <!--  <displayFlags>NoPlane</displayFlags> -->
+      <range scale="LINEAR">
+        <minValue>0</minValue>
+        <maxValue>1.6</maxValue>
+      </range>
+       <defaultColormap>GOES-R/GOESR-L2/RRQPE</defaultColormap>
+       <!-- <defaultColormap>Grid/gridded data</defaultColormap> -->
+      <!-- <colorbarLabeling>
+         <increment>0.01</increment>
+      </colorbarLabeling>  -->
+       <colorbarLabeling>
+        <values>0.01 0.02 0.03 0.05 0.08 0.1 0.3 0.4 0.5 0.75 1 1.2 1.4 1.6</values>
+      </colorbarLabeling>
+    </imageStyle>
+    </styleRule>
+
+    <!-- IMERG-Late Precip Error added April 6 2016 -->
+    <styleRule>
+     <paramLevelMatches>
+      <parameter>CalPrecErLGRD</parameter>
+    </paramLevelMatches>
+    <imageStyle>
+      <displayUnits>in/hr</displayUnits>
+     <!--  <displayFlags>NoPlane</displayFlags> -->
+      <range scale="LINEAR">
+        <minValue>1</minValue>
+        <maxValue>8</maxValue>
+      </range>
+      <!-- <range scale="LINEAR">
+        <minValue>30</minValue>
+        <maxValue>400</maxValue>
+      </range> -->
+      <defaultColormap>GOES-R/GOESR-L2/RRQPE</defaultColormap>
+      <!-- <defaultColormap>Grid/gridded data</defaultColormap> -->
+        <colorbarLabeling>
+         <increment>1</increment>
+      </colorbarLabeling>
+       <!-- <colorbarLabeling>
+        <values>5 10 15 20</values> 
+      </colorbarLabeling>  -->
+    </imageStyle>
+    </styleRule>
+
+   <!-- CMORPH Precip Experimental Sep 2, 2016 -->
+    <styleRule>
+         <paramLevelMatches>
+          <parameter>RR_CMORPH</parameter>
+        </paramLevelMatches>
+    <imageStyle>
+      <displayUnits>in/hr</displayUnits>
+     <!--  <displayFlags>NoPlane</displayFlags> -->
+      <range scale="LINEAR">
+        <minValue>0</minValue>
+        <maxValue>1.6</maxValue>
+      </range>
+       <defaultColormap>GOES-R/GOESR-L2/RRQPE</defaultColormap>
+       <!-- <defaultColormap>Grid/gridded data</defaultColormap> -->
+      <!-- <colorbarLabeling>
+         <increment>0.01</increment>
+      </colorbarLabeling>  -->
+       <colorbarLabeling>
+        <values>0.01 0.02 0.03 0.05 0.08 0.1 0.3 0.4 0.5 0.75 1 1.2 1.4 1.6</values>
+      </colorbarLabeling>
+    </imageStyle>
+    </styleRule>
+
+</styleRuleset>
